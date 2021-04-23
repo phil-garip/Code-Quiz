@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quiz</title>
+    <link href="./assets/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header with high scores and timer -->
+    <header>
+        <a href="#" id="view-highscore">View Highscores</a>
+        <p>Time: <span id="timer">90</span></p>
+    </header>
+    <main>
+        <!-- landing content with start -->
+        <section id="start">
+            <h1>Space Quiz</h1>
+            <p>You love space? No? Take this quiz and find out!!!</p>
+            <button id="start-button">start</button>
+        </section>
+        <!-- quiestions -->
+        <section id="question-container" style= "display: none;">
+            <p id="question-title"></p>
+            <p><button id="button1"></button></p>
+            <p><button id="button2"></button></p>
+            <p><button id="button3"></button></p>
+            <p><button id="button4"></button></p>
+            <p id="answerCheck"></p>
+        </section>
+        <!-- scores -->
+        <section id="user-scores" style="display: none;">
+            <h2>Your Final Score: <span id="final-score"></span></h2>
+            <p>Enter Your Initials <input id="initial-input" type="text"></p>
+            <button type="submit" id="submit-initials">submit</button>
+        </section>
+        <!-- high scores section -->
+        <section id="highscore-section" style="display: none;">
+            <h2>High Scores</h2>
+            <section id="listOfHighScores"></section>
+            <form>
+                <p>
+                    <button type="submit" id="go-back">Go Back</button>
+                    <button type="submit" id="clear-scores">Clear High Scores</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
